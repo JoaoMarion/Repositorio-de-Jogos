@@ -95,6 +95,16 @@ static void JogarJogo(Jogo* jogosCarregados, int jogosCarregadosCount) {
     }
 }
 
+static void mostrarHorasJogadas(Jogo* jogosCarregados, int jogosCarregadosCount) {
+    if (jogosCarregadosCount == 0) {
+        cout << "Nenhum jogo carregado, Carregue a Biblioteca\n";
+        return;
+    }
+
+    Jogo totalHoras = somaVetorJogos(jogosCarregados, jogosCarregadosCount);
+    cout << "Total de horas jogadas: " << totalHoras.GetHoras() << " horas.\n";
+}
+
 int main() {
     setlocale(LC_ALL, "Portuguese");
 
@@ -108,7 +118,8 @@ int main() {
         cout << "2. Ver Biblioteca de Jogos\n";
         cout << "3. Limpar Biblioteca de Jogos\n";
         cout << "4. Jogar Jogo\n";
-        cout << "5. Sair\n";
+        cout << "5. Mostrar Horas Jogadas\n"; 
+        cout << "6. Sair\n"; 
         cout << "Digite sua escolha: ";
         cin >> escolha;
 
@@ -124,19 +135,22 @@ int main() {
             break;
         case 4:
             if (jogosCarregadosCount == 0) {
-                cout << "Nenhum jogo carregado. Carregue a Biblioteca.\n";
+                cout << "Nenhum jogo carregado, carregue a Biblioteca.\n";
             }
             else {
                 JogarJogo(jogosCarregados, jogosCarregadosCount);
             }
             break;
-        case 5:
+        case 5: 
+            mostrarHorasJogadas(jogosCarregados, jogosCarregadosCount);
+            break;
+        case 6:
             cout << "Saindo do programa...\n";
             break;
         default:
-            cout << "Opção inválida. Tente novamente.\n";
+            cout << "Opção inválida.\n";
         }
-    } while (escolha != 5);
+    } while (escolha != 6); //
 
     delete[] jogosCarregados;
     return 0;

@@ -23,7 +23,8 @@ public:
 	Jogo(const string& titulo, float valor = 0, int tempo = 0);										
 	void atualizar(float valor);					
 	void jogar(int tempo);							
-	void exibir() const;	
+	void exibir() const;
+	Jogo operator+(const Jogo& outro) const;
 	const Jogo& comparar(const Jogo& jogo, const Jogo& (Jogo::* func)(const Jogo&) const) const;
 	const Jogo& MaisJogado(const Jogo& jogo) const;
 	const Jogo& MenorCusto(const Jogo& jogo) const;
@@ -65,6 +66,8 @@ public:
 		ifs.read(reinterpret_cast<char*>(&preco), sizeof(preco));
 		ifs.read(reinterpret_cast<char*>(&horas), sizeof(horas));
 	}
+	const int GetHoras() const { return horas; };
+	
     
 };
 
@@ -115,6 +118,9 @@ inline const Jogo& Jogo::MaisJogado(const Jogo& jogo) const {
 
 
 	}
+
+	Jogo somaVetorJogos(Jogo* vetor, int cont);
+	
 
 
 

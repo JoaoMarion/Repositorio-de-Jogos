@@ -48,3 +48,18 @@ void Jogo::exibir() const
         << " Custo: " << custo << "/h\n";
 }
 
+Jogo Jogo::operator+(const Jogo& outro) const {
+    Jogo Soma;
+    Soma.jogar(this->GetHoras() + outro.GetHoras());
+    return Soma;
+}
+
+
+Jogo somaVetorJogos(Jogo* vetor, int cont)
+{
+    Jogo total;
+    for (int i = 0; i < cont; i++) {
+        total = total + vetor[i];
+    }
+    return total;
+}
