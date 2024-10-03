@@ -31,6 +31,7 @@ public:
 	const Jogo& MenorPreco(const Jogo& jogo) const;
 	friend std::istream& operator>>(std::istream& is, Jogo& j) {
 		
+		
 		std::cout << "\nDigite o Nome do Jogo: ";
 		is.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 		std::getline(is, j.nome); 
@@ -43,11 +44,12 @@ public:
 		
 		std::cout << "\nDigite as Horas jogadas: ";
 		is >> j.horas;
-		is.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		
 
 		
 		j.calcular();
 		return is; 
+		
 	}
 	void salvar(std::ofstream& ofs) const {
 		size_t length = nome.size();
@@ -67,6 +69,7 @@ public:
 		ifs.read(reinterpret_cast<char*>(&horas), sizeof(horas));
 	}
 	const int GetHoras() const { return horas; };
+	const int GetPreco() const { return preco; };
 	
     
 };
@@ -96,7 +99,7 @@ inline const Jogo& Jogo::MaisJogado(const Jogo& jogo) const {
 }
 
 
-	inline const Jogo& Jogo::MenorCusto(const Jogo & jogo) const {
+inline const Jogo& Jogo::MenorCusto(const Jogo & jogo) const {
 		if (jogo.custo < this->custo) {
 			return jogo;
 		}
@@ -108,7 +111,7 @@ inline const Jogo& Jogo::MaisJogado(const Jogo& jogo) const {
 }
 
 
-	inline const Jogo& Jogo::MenorPreco(const Jogo& jogo) const {
+inline const Jogo& Jogo::MenorPreco(const Jogo& jogo) const {
 		if (jogo.preco < this->preco) {
 			return jogo;
 		}
@@ -119,7 +122,7 @@ inline const Jogo& Jogo::MaisJogado(const Jogo& jogo) const {
 
 	}
 
-	Jogo somaVetorJogos(Jogo* vetor, int cont);
+Jogo somaVetorJogos(Jogo* vetor, int cont);
 	
 
 

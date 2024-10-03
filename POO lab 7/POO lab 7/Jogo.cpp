@@ -50,7 +50,8 @@ void Jogo::exibir() const
 
 Jogo Jogo::operator+(const Jogo& outro) const {
     Jogo Soma;
-    Soma.jogar(this->GetHoras() + outro.GetHoras());
+    Soma.jogar(this->horas + outro.horas);
+    Soma.atualizar(this->preco + outro.preco);
     return Soma;
 }
 

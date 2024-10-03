@@ -1,2 +1,6 @@
-﻿  POO lab 7.cpp
+﻿  Jogo.cpp
+C:\Users\joaop\source\repos\POO lab 7\POO lab 7\Jogo.h(72,38): warning C4244: 'return': conversão de 'const float' para 'const int', possível perda de dados
+  POO lab 7.cpp
+C:\Users\joaop\source\repos\POO lab 7\POO lab 7\Jogo.h(72,38): warning C4244: 'return': conversão de 'const float' para 'const int', possível perda de dados
+  Gerando Código...
   POO lab 7.vcxproj -> C:\Users\joaop\source\repos\POO lab 7\x64\Debug\POO lab 7.exe

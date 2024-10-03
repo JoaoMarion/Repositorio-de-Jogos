@@ -105,6 +105,32 @@ static void mostrarHorasJogadas(Jogo* jogosCarregados, int jogosCarregadosCount)
     cout << "Total de horas jogadas: " << totalHoras.GetHoras() << " horas.\n";
 }
 
+
+static void mostrarPrecoTotal(Jogo* jogosCarregados, int jogosCarregadosCount) {
+    if (jogosCarregadosCount == 0) {
+        cout << "Nenhum jogo carregado, Carregue a Biblioteca\n";
+        return;
+    }
+
+    Jogo totalHoras = somaVetorJogos(jogosCarregados, jogosCarregadosCount);
+    cout << "Total gasto em jogos: " << totalHoras.GetPreco() << "$.\n";
+}
+
+static void JogoMaisJogado(Jogo* jogosCarregados, int jogosCarregadosCount) {
+   
+    Jogo maisJogado = jogosCarregados[0];
+
+    for (size_t i = 1; i < jogosCarregadosCount; i++) {
+        
+        const Jogo& resultado = maisJogado.MaisJogado(jogosCarregados[i]);
+        if (&resultado != &maisJogado) {
+            maisJogado = jogosCarregados[i];
+        }
+    }
+
+    maisJogado.exibir(); 
+}
+
 int main() {
     setlocale(LC_ALL, "Portuguese");
 
@@ -119,7 +145,8 @@ int main() {
         cout << "3. Limpar Biblioteca de Jogos\n";
         cout << "4. Jogar Jogo\n";
         cout << "5. Mostrar Horas Jogadas\n"; 
-        cout << "6. Sair\n"; 
+        cout << "6. Mostrar Preco gasto\n";
+        cout << "7. Exibir o Mais Jogado\n"; 
         cout << "Digite sua escolha: ";
         cin >> escolha;
 
@@ -145,12 +172,15 @@ int main() {
             mostrarHorasJogadas(jogosCarregados, jogosCarregadosCount);
             break;
         case 6:
-            cout << "Saindo do programa...\n";
+            mostrarPrecoTotal(jogosCarregados, jogosCarregadosCount);
+            break;
+        case 7:
+            JogoMaisJogado(jogosCarregados, jogosCarregadosCount);
             break;
         default:
             cout << "Opção inválida.\n";
         }
-    } while (escolha != 6); //
+    } while (escolha != 7); 
 
     delete[] jogosCarregados;
     return 0;
