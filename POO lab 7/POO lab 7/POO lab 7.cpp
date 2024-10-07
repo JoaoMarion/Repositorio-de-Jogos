@@ -117,7 +117,11 @@ static void mostrarPrecoTotal(Jogo* jogosCarregados, int jogosCarregadosCount) {
 }
 
 static void JogoMaisJogado(Jogo* jogosCarregados, int jogosCarregadosCount) {
-   
+    if (jogosCarregadosCount == 0) {
+        cout << "Nenhum jogo carregado, Carregue a Biblioteca\n";
+        return;
+    }
+
     Jogo maisJogado = jogosCarregados[0];
 
     for (size_t i = 1; i < jogosCarregadosCount; i++) {
@@ -147,6 +151,7 @@ int main() {
         cout << "5. Mostrar Horas Jogadas\n"; 
         cout << "6. Mostrar Preco gasto\n";
         cout << "7. Exibir o Mais Jogado\n"; 
+        cout << "8. Sair\n"; 
         cout << "Digite sua escolha: ";
         cin >> escolha;
 
@@ -177,10 +182,13 @@ int main() {
         case 7:
             JogoMaisJogado(jogosCarregados, jogosCarregadosCount);
             break;
+        case 8:
+            cout << "Saindo ";
+            break;
         default:
             cout << "Opção inválida.\n";
         }
-    } while (escolha != 7); 
+    } while (escolha != 8); 
 
     delete[] jogosCarregados;
     return 0;
