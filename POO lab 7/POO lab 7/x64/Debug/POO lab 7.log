@@ -1,5 +1,54 @@
-﻿  POO lab 7.cpp
+﻿  Jogo.cpp
+C:\Users\joaop\source\repos\Repositorio-de-Jogos\POO lab 7\POO lab 7\Jogo.h(72,38): warning C4244: 'return': conversão de 'const float' para 'const int', possível perda de dados
+  (compilando o arquivo fonte 'Jogo.cpp')
+  
+  POO lab 7.cpp
 C:\Users\joaop\source\repos\Repositorio-de-Jogos\POO lab 7\POO lab 7\Jogo.h(72,38): warning C4244: 'return': conversão de 'const float' para 'const int', possível perda de dados
   (compilando o arquivo fonte 'POO%20lab%207.cpp')
   
-  POO lab 7.vcxproj -> C:\Users\joaop\Source\Repos\Repositorio-de-Jogos\POO lab 7\x64\Debug\POO lab 7.exe
+  Gerando Código...
+libcpmtd.lib(wlocale.obj) : error LNK2001: símbolo externo não resolvido _calloc_dbg
+libcpmtd.lib(xlocale.obj) : error LNK2001: símbolo externo não resolvido _calloc_dbg
+Jogo.obj : error LNK2001: símbolo externo não resolvido _calloc_dbg
+POO lab 7.obj : error LNK2001: símbolo externo não resolvido _calloc_dbg
+libcpmtd.lib(_tolower.obj) : error LNK2001: símbolo externo não resolvido _calloc_dbg
+libcpmtd.lib(locale.obj) : error LNK2001: símbolo externo não resolvido _calloc_dbg
+libcpmtd.lib(wlocale.obj) : error LNK2001: símbolo externo não resolvido _free_dbg
+libcpmtd.lib(xlocale.obj) : error LNK2001: símbolo externo não resolvido _free_dbg
+libcpmtd.lib(xwcsxfrm.obj) : error LNK2001: símbolo externo não resolvido _free_dbg
+libcpmtd.lib(StlCompareStringA.obj) : error LNK2001: símbolo externo não resolvido _free_dbg
+libcpmtd.lib(cin.obj) : error LNK2001: símbolo externo não resolvido _free_dbg
+libcpmtd.lib(cerr.obj) : error LNK2001: símbolo externo não resolvido _free_dbg
+libcpmtd.lib(locale.obj) : error LNK2001: símbolo externo não resolvido _free_dbg
+libcpmtd.lib(StlLCMapStringA.obj) : error LNK2001: símbolo externo não resolvido _free_dbg
+Jogo.obj : error LNK2001: símbolo externo não resolvido _free_dbg
+POO lab 7.obj : error LNK2001: símbolo externo não resolvido _free_dbg
+libcpmtd.lib(locale0.obj) : error LNK2001: símbolo externo não resolvido _free_dbg
+libcpmtd.lib(cout.obj) : error LNK2001: símbolo externo não resolvido _free_dbg
+libcpmtd.lib(wlocale.obj) : error LNK2001: símbolo externo não resolvido _malloc_dbg
+libcpmtd.lib(xlocale.obj) : error LNK2001: símbolo externo não resolvido _malloc_dbg
+libcpmtd.lib(xwcsxfrm.obj) : error LNK2001: símbolo externo não resolvido _malloc_dbg
+libcpmtd.lib(StlCompareStringA.obj) : error LNK2001: símbolo externo não resolvido _malloc_dbg
+libcpmtd.lib(cin.obj) : error LNK2001: símbolo externo não resolvido _malloc_dbg
+libcpmtd.lib(cerr.obj) : error LNK2001: símbolo externo não resolvido _malloc_dbg
+libcpmtd.lib(locale.obj) : error LNK2001: símbolo externo não resolvido _malloc_dbg
+libcpmtd.lib(StlLCMapStringA.obj) : error LNK2001: símbolo externo não resolvido _malloc_dbg
+Jogo.obj : error LNK2001: símbolo externo não resolvido _malloc_dbg
+POO lab 7.obj : error LNK2001: símbolo externo não resolvido _malloc_dbg
+libcpmtd.lib(locale0.obj) : error LNK2001: símbolo externo não resolvido _malloc_dbg
+libcpmtd.lib(cout.obj) : error LNK2001: símbolo externo não resolvido _malloc_dbg
+libcpmtd.lib(cerr.obj) : error LNK2001: símbolo externo não resolvido _CrtDbgReport
+libcpmtd.lib(locale.obj) : error LNK2001: símbolo externo não resolvido _CrtDbgReport
+libcpmtd.lib(wlocale.obj) : error LNK2001: símbolo externo não resolvido _CrtDbgReport
+libcpmtd.lib(xlocale.obj) : error LNK2001: símbolo externo não resolvido _CrtDbgReport
+Jogo.obj : error LNK2001: símbolo externo não resolvido _CrtDbgReport
+POO lab 7.obj : error LNK2001: símbolo externo não resolvido _CrtDbgReport
+libcpmtd.lib(cout.obj) : error LNK2001: símbolo externo não resolvido _CrtDbgReport
+libcpmtd.lib(cin.obj) : error LNK2001: símbolo externo não resolvido _CrtDbgReport
+libcpmtd.lib(_tolower.obj) : error LNK2019: símbolo externo não resolvido, _wcsdup_dbg, referenciado na função _Getctype
+libcpmtd.lib(xstrcoll.obj) : error LNK2001: símbolo externo não resolvido _wcsdup_dbg
+libcpmtd.lib(locale.obj) : error LNK2019: símbolo externo não resolvido, _realloc_dbg, referenciado na função "private: static void __cdecl std::locale::_Locimp::_Locimp_Addfac(class std::locale::_Locimp *,class std::locale::facet *,unsigned __int64)" (?_Locimp_Addfac@_Locimp@locale@std@@CAXPEAV123@PEAVfacet@23@_K@Z)
+libcpmtd.lib(StlLCMapStringA.obj) : error LNK2019: símbolo externo não resolvido, _CrtDbgReportW, referenciado na função _freea_crt
+libcpmtd.lib(xmbtowc.obj) : error LNK2001: símbolo externo não resolvido _CrtDbgReportW
+libcpmtd.lib(StlCompareStringA.obj) : error LNK2001: símbolo externo não resolvido _CrtDbgReportW
+C:\Users\joaop\Source\Repos\Repositorio-de-Jogos\POO lab 7\x64\Debug\POO lab 7.exe : fatal error LNK1120: 7 externo não resolvidos

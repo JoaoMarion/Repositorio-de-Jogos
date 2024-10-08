@@ -1,0 +1,13 @@
+﻿  Jogo.cpp
+C:\Users\joaop\source\repos\Repositorio-de-Jogos\POO lab 7\POO lab 7\Jogo.h(72,38): warning C4244: 'return': conversão de 'const float' para 'const int', possível perda de dados
+  (compilando o arquivo fonte 'Jogo.cpp')
+  
+  POO lab 7.cpp
+C:\Users\joaop\source\repos\Repositorio-de-Jogos\POO lab 7\POO lab 7\Jogo.h(72,38): warning C4244: 'return': conversão de 'const float' para 'const int', possível perda de dados
+  (compilando o arquivo fonte 'POO%20lab%207.cpp')
+  
+  Gerando código
+  Previous IPDB not found, fall back to full compilation.
+  All 225 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finalizada a geração de código
+  POO lab 7.vcxproj -> C:\Users\joaop\Source\Repos\Repositorio-de-Jogos\POO lab 7\x64\Release\POO lab 7.exe
